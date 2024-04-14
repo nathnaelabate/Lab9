@@ -7,3 +7,10 @@ def encode_number(num):
     encoded_num = int(encoded_num_str)
     return encoded_num
 
+
+def decode(num):
+    decoded_password = ""
+    for digit in num:
+        decoded_num = str((int(digit) - 3) % 10)
+        decoded_password += decoded_num
+    return decoded_password
